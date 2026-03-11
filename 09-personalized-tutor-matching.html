@@ -1,0 +1,125 @@
+<!-- Educational Progress System -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Personalized Tutor Matching</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FFD700", // Yellow
+                        "background-light": "#F3F4F6", // Light gray
+                        "background-dark": "#111827", // Dark gray
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1F2937",
+                        "text-light": "#374151",
+                        "text-dark": "#F9FAFB",
+                        "accent-dark": "#374151", // Dark accent for boxes
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        'xl': '1.5rem',
+                        '2xl': '2rem',
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark min-h-screen">
+<main class="max-w-md mx-auto p-4 md:p-6 pb-24 relative overflow-hidden">
+<header class="mb-8 mt-4">
+<h1 class="text-3xl font-bold uppercase tracking-tight text-gray-900 dark:text-white mb-4 leading-tight">
+                Подберём репетитора<br/>
+<span class="text-primary">под уровень</span> и характер ребёнка
+            </h1>
+<p class="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+                Пропустите долгие поиски. Расскажите нам о вашем ребёнке, и мы найдем идеального преподавателя для достижения лучших результатов.
+            </p>
+</header>
+<section class="relative mb-10">
+<div class="absolute left-6 top-6 bottom-6 w-0.5 bg-gray-200 dark:bg-gray-700 rounded-full z-0"></div>
+<div class="space-y-8 relative z-10">
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent-dark dark:bg-gray-800 flex items-center justify-center border-4 border-background-light dark:border-background-dark shadow-sm">
+<span class="material-icons text-primary text-xl">edit_document</span>
+</div>
+<div class="pt-2">
+<h3 class="font-bold text-lg text-gray-900 dark:text-white mb-1">Заявка</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">Укажите класс, текущие оценки и особенности характера ребёнка.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center border-4 border-background-light dark:border-background-dark shadow-sm text-accent-dark">
+<span class="material-icons text-xl">person_search</span>
+</div>
+<div class="pt-2">
+<h3 class="font-bold text-lg text-gray-900 dark:text-white mb-1">Подбор эксперта</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">Мы анализируем данные и находим лучшего специалиста начальной или средней школы.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent-dark dark:bg-gray-800 flex items-center justify-center border-4 border-background-light dark:border-background-dark shadow-sm">
+<span class="material-icons text-primary text-xl">calendar_month</span>
+</div>
+<div class="pt-2">
+<h3 class="font-bold text-lg text-gray-900 dark:text-white mb-1">Расписание</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">Согласовываем удобное время для онлайн или офлайн занятий.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent-dark dark:bg-gray-800 flex items-center justify-center border-4 border-background-light dark:border-background-dark shadow-sm">
+<span class="material-icons text-primary text-xl">school</span>
+</div>
+<div class="pt-2">
+<h3 class="font-bold text-lg text-gray-900 dark:text-white mb-1">Пробный урок</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">Бесплатное занятие для знакомства и оценки уровня знаний.</p>
+</div>
+</div>
+</div>
+</section>
+<div class="bg-accent-dark text-white p-6 rounded-2xl mb-8 relative overflow-hidden shadow-lg">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-gray-700/50 rounded-full blur-2xl"></div>
+<div class="relative z-10 flex items-center gap-4">
+<div class="bg-white/10 p-3 rounded-full flex-shrink-0">
+<span class="material-icons text-primary text-2xl">published_with_changes</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1 text-primary">Гарантия замены</h4>
+<p class="text-sm text-gray-300">Если контакт не сложится, мы оперативно и бесплатно подберем другого преподавателя.</p>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-t border-gray-200 dark:border-gray-800 z-50">
+<div class="max-w-md mx-auto flex gap-3">
+<button class="w-14 h-14 bg-primary text-accent-dark rounded-full flex items-center justify-center shadow-md flex-shrink-0 hover:bg-yellow-400 transition-colors">
+<span class="material-icons">chat</span>
+</button>
+<button class="flex-1 bg-accent-dark dark:bg-gray-800 text-white font-bold rounded-full flex items-center justify-center shadow-md hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors uppercase tracking-wider text-sm">
+                    Оставить заявку
+                </button>
+</div>
+</div>
+</main>
+
+
+</body></html>
